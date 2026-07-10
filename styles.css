@@ -1115,10 +1115,11 @@ a.footer__meta:hover { color: var(--brand); }
   .card { height: 280px; }
 }
 
-/* Ниже 400px логотипу уже не хватает места рядом с телефоном */
+/* Ниже 400px логотипу уже не хватает места рядом с телефоном.
+   width: auto сохраняет исходную пропорцию 43:54 — ширина выходит 25.48px. */
 @media (max-width: 399px) {
   .logo img {
-    width: 25px;
+    width: auto;
     height: 32px;
   }
 }
