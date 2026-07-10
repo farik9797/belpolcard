@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Пластиковые карты — изготовление в Бресте | БелПолКард</title>
+<meta name="description" content="Изготовление пластиковых карт с 2014 года в Бресте. Дисконтные, подарочные и ID-карты с индивидуальным дизайном. Работаем по всей Беларуси.">
+<link rel="icon" href="assets/logo.png">
+
+<!-- Шрифты первого экрана — грузим параллельно с CSS -->
+<link rel="preload" href="fonts/lato-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/lato-900.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/jost-400.woff2" as="font" type="font/woff2" crossorigin>
+
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- ─────────────────────────── HEADER ─────────────────────────── -->
+<header class="site-header">
+  <div class="navbar">
+    <div class="container navbar__inner">
+      <a class="logo" href="/" aria-label="БелПолКард — на главную">
+        <img src="assets/logo.png" alt="БелПолКард" width="43" height="54">
+      </a>
+
+      <div class="contacts">
+        <div class="contact contact--phone">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M14.05 2a9 9 0 0 1 8 7.94"/><path d="M14.05 6A5 5 0 0 1 18 10"/>
+            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+          </svg>
+          <span class="contact__label">Звоните:</span>
+          <a class="contact__value" href="tel:+375336025004">+375 (33) 602-50-04</a>
+        </div>
+
+        <span class="contacts__divider" aria-hidden="true"></span>
+
+        <div class="contact contact--hours">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M21 7.5V6a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h3.5"/>
+            <path d="M16 2v4"/><path d="M8 2v4"/><path d="M3 10h5"/>
+            <path d="M17.5 17.5 16 16.3V14"/><circle cx="16" cy="16" r="6"/>
+          </svg>
+          <span class="contact__label">Работаем:</span>
+          <span class="contact__value">09:00 - 17:00 <span class="contact__value--muted">в будни</span></span>
+        </div>
+
+        <span class="contacts__divider" aria-hidden="true"></span>
+
+        <div class="contact contact--mail">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <rect width="20" height="16" x="2" y="4" rx="2"/>
+            <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
+          </svg>
+          <span class="contact__label">Пишите:</span>
+          <a class="contact__value" href="mailto:info@bcard.by">info@bcard.by</a>
+        </div>
+      </div>
+
+      <div class="social">
+        <a class="social__link social__link--yt" href="#" aria-label="YouTube">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M23 12s0-3.9-.5-5.8a3 3 0 0 0-2.1-2.1C18.5 3.6 12 3.6 12 3.6s-6.5 0-8.4.5a3 3 0 0 0-2.1 2.1C1 8.1 1 12 1 12s0 3.9.5 5.8a3 3 0 0 0 2.1 2.1c1.9.5 8.4.5 8.4.5s6.5 0 8.4-.5a3 3 0 0 0 2.1-2.1C23 15.9 23 12 23 12zM9.8 15.6V8.4l6.3 3.6-6.3 3.6z"/></svg>
+        </a>
+        <a class="social__link social__link--ig" href="#" aria-label="Instagram">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <rect width="20" height="20" x="2" y="2" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1.2" fill="currentColor" stroke="none"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <nav class="mainnav" aria-label="Основная навигация">
+    <div class="container mainnav__inner">
+      <button class="burger" type="button" aria-label="Открыть меню" aria-expanded="false" aria-controls="mainnav-list">
+        <span class="burger__box" aria-hidden="true">
+          <span class="burger__bar"></span>
+          <span class="burger__bar"></span>
+          <span class="burger__bar"></span>
+        </span>
+      </button>
+
+      <div class="mainnav__list" id="mainnav-list">
+        <a class="mainnav__link" href="#" aria-current="page">Пластиковые карты</a>
+        <span class="mainnav__divider" aria-hidden="true"></span>
+        <a class="mainnav__link" href="#">RFID-продукция</a>
+        <span class="mainnav__divider" aria-hidden="true"></span>
+        <a class="mainnav__link" href="#">POS-материалы</a>
+        <span class="mainnav__divider" aria-hidden="true"></span>
+        <a class="mainnav__link" href="#">Контакты</a>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<!-- ─────────────────────────── BREADCRUMB ─────────────────────────── -->
+<nav class="breadcrumb" aria-label="Хлебные крошки">
+  <div class="container breadcrumb__inner">
+    <a class="breadcrumb__link" href="/">Главная</a>
+    <span class="breadcrumb__sep" aria-hidden="true">/</span>
+    <span class="breadcrumb__current" aria-current="page">Пластиковые карты</span>
+  </div>
+</nav>
+
+<main>
+
+<!-- ─────────────────────────── HERO ─────────────────────────── -->
+<section class="hero">
+  <div class="container">
+    <div class="hero__row">
+      <div class="hero__left">
+        <div class="hero__title">
+          <p class="hero__eyebrow">Заказать</p>
+          <h1 class="hero__heading">пластиковые карты</h1>
+        </div>
+        <p class="hero__text">
+          Изготовление пластиковых карт — наше дело с 2014 года в Бресте. Разработаем и произведём
+          дисконтные, подарочные и ID‑карты с индивидуальным дизайном. Подберём цвета, шрифты и графику
+          под вашу айдентику, а данные расположим так, чтобы их легко считывали и запоминали. Благодаря
+          фирменному оформлению ваши карты выделяются среди конкурентов. Чтобы заказать пластиковые
+          карты «под ключ», позвоните или напишите нам. Работаем в Бресте и по всей Беларуси.
+        </p>
+      </div>
+
+      <div class="hero__media">
+        <img src="assets/hero-cards.png" alt="Пластиковые карты с индивидуальным дизайном" width="889" height="584">
+      </div>
+    </div>
+
+    <div class="hero__actions">
+      <a class="btn btn--282" href="#">Заказать</a>
+    </div>
+  </div>
+</section>
+
+<!-- ─────────────────────────── COST ─────────────────────────── -->
+<section class="cost">
+  <div class="container">
+    <h2 class="section-heading section-heading--brand">Цена пластиковых карт</h2>
+    <div class="cost__row">
+      <p class="cost__text">
+        Стоимость пластиковых карт зависит от типа пластика, его фактуры и технологии производства.
+        Персонализация усложняет изготовление, поэтому цена персонализированных карт выше.
+        Ориентировочная стоимость — от 0,20 BYN за штуку. Указанная цена является базовой и не
+        учитывает индивидуальные скидки. Чтобы узнать точную стоимость вашего тиража и получить расчёт,
+        позвоните нам или напишите.
+      </p>
+      <a class="btn btn--282" href="tel:+375336025004">Позвонить</a>
+    </div>
+  </div>
+</section>
+
+<!-- ─────────────────────────── PRODUCTS ─────────────────────────── -->
+<section class="products">
+  <div class="container">
+    <h2 class="section-heading section-heading--brand">Виды пластиковых карт</h2>
+    <ul class="cards">
+      <li class="card">
+        <div class="card__media"><img src="assets/card-discount.png" alt="Дисконтные карты" loading="lazy"></div>
+        <h3 class="card__title">Дисконтные карты</h3>
+      </li>
+      <li class="card">
+        <div class="card__media"><img src="assets/card-subscription.png" alt="Карты-абонементы" loading="lazy"></div>
+        <h3 class="card__title">Карты-абонементы</h3>
+      </li>
+      <li class="card">
+        <div class="card__media"><img src="assets/card-gift.png" alt="Подарочные карты" loading="lazy"></div>
+        <h3 class="card__title">Подарочные карты</h3>
+      </li>
+      <li class="card">
+        <div class="card__media"><img src="assets/card-insurance.png" alt="Страховые карты" loading="lazy"></div>
+        <h3 class="card__title">Страховые карты</h3>
+      </li>
+      <li class="card">
+        <div class="card__media"><img src="assets/card-fuel.png" alt="Топливные карты" loading="lazy"></div>
+        <h3 class="card__title">Топливные карты</h3>
+      </li>
+      <li class="card">
+        <div class="card__media"><img src="assets/card-business.png" alt="Карты-визитки" loading="lazy"></div>
+        <h3 class="card__title">Карты-визитки</h3>
+      </li>
+      <li class="card">
+        <div class="card__media"><img src="assets/card-student.png" alt="Карты учащегося" loading="lazy"></div>
+        <h3 class="card__title">Карты учащегося</h3>
+      </li>
+      <li class="card">
+        <div class="card__media"><img src="assets/card-library.png" alt="Читательские карты" loading="lazy"></div>
+        <h3 class="card__title">Читательские карты</h3>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<!-- ─────────────────────────── NON-STANDARD ─────────────────────────── -->
+<section class="nonstandard">
+  <div class="container">
+    <h2 class="section-heading section-heading--brand">Нестандартные карты</h2>
+    <ul class="cards">
+      <li class="card">
+        <div class="card__media"><img src="assets/card-any-shape.png" alt="Карты любой формы" loading="lazy"></div>
+        <h3 class="card__title">Карты любой формы</h3>
+      </li>
+      <li class="card">
+        <div class="card__media"><img src="assets/card-tag.png" alt="Карты 1-, 2- и 3-tag" loading="lazy"></div>
+        <h3 class="card__title">Карты 1-, 2- и 3-tag</h3>
+      </li>
+      <li class="card">
+        <div class="card__media card__media--bleed"><img src="assets/card-textured.png" alt="Фактурные карты" loading="lazy"></div>
+        <h3 class="card__title">Фактурные карты</h3>
+      </li>
+      <li class="card">
+        <div class="card__media card__media--bleed"><img src="assets/card-magnet.png" alt="Карты на магните" loading="lazy"></div>
+        <h3 class="card__title">Карты на магните</h3>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<!-- ─────────────────────────── PERSONALIZE ─────────────────────────── -->
+<section class="personalize">
+  <div class="container">
+    <h2 class="section-heading section-heading--brand">Виды персонализации</h2>
+
+    <figure class="personalize__figure">
+      <img src="assets/personalization.png" alt="Схема видов персонализации пластиковой карты" loading="lazy">
+    </figure>
+
+    <div class="personalize__grid">
+      <div class="personalize__col">
+        <article class="feature">
+          <div class="feature__line"><span class="feature__num">1</span><h3 class="feature__title">Фото владельца и ФИО</h3></div>
+          <p class="feature__text">Для дополнительной визуализации на карту наносится фото владельца и ФИО. Этот тип персонализации встречается на пропусках и бейджах, социальных и транспортных картах.</p>
+        </article>
+        <article class="feature">
+          <div class="feature__line"><span class="feature__num">2</span><h3 class="feature__title">Персонализация чипа</h3></div>
+          <p class="feature__text">Чип на пластиковой карте позволяет управлять правами и привилегиями конкретного пользователя. Используется для повышения безопасности и защиты данных.</p>
+        </article>
+        <article class="feature">
+          <div class="feature__line"><span class="feature__num">3</span><h3 class="feature__title">Голограмма</h3></div>
+          <p class="feature__text">Привычный элемент защиты от подделок. Голограмма при высокой температуре прессуется в поверхность пластиковой карты и затрудняет подделку карты.</p>
+        </article>
+        <article class="feature">
+          <div class="feature__line"><span class="feature__num">4</span><h3 class="feature__title">Печать переменных данных</h3></div>
+          <p class="feature__text">Для визуальной идентификации пластиковой карты на нее можно нанести индивидуальный номер, а также ФИО держателя карты.</p>
+        </article>
+        <article class="feature">
+          <div class="feature__line"><span class="feature__num">5</span><h3 class="feature__title">Печатная нумерация</h3></div>
+          <p class="feature__text">Печатная нумерация – это печать на карточках переменных данных или порядковых номеров. К переменным данным можно отнести данные о сроке действия карты, персональный номер, промо-код и т.п.</p>
+        </article>
+        <article class="feature">
+          <div class="feature__line"><span class="feature__num">6</span><h3 class="feature__title">Индентная печать</h3></div>
+          <p class="feature__text">Вид персонализации методом вдавливания на поверхности карты цифр или букв с окрашиваем в черный или белый цвет. Данный способ также применяется как на банковских картах, так и на картах лояльности</p>
+        </article>
+        <article class="feature">
+          <div class="feature__line"><span class="feature__num">7</span><h3 class="feature__title">Эмбоссирование</h3></div>
+          <p class="feature__text">Один из распространённых способов персонализации пластиковой карты методом механического выдавливания цифр или букв. Данный метод применяется как на банковских картах, так и на картах лояльности. Также возможна окраска рельефа (типпирование) выдавленных символов. Стандартные цвета: золотой, серебряный белый и чёрный цвета.</p>
+        </article>
+      </div>
+
+      <div class="personalize__col">
+        <article class="feature">
+          <div class="feature__line"><span class="feature__num">8</span><h3 class="feature__title">Нанесение полосы для подписи</h3></div>
+          <p class="feature__text">Дополнительным методом персонализации может быть образец подписи владельца. Для этого на карту наносится специальный слой, позволяющий делать на нем надписи обычной шариковой ручкой.</p>
+        </article>
+        <article class="feature">
+          <div class="feature__line"><span class="feature__num">9</span><h3 class="feature__title">Тиснение фольгой</h3></div>
+          <p class="feature__text">Рисунок или текст, наносится методом горячего тиснения</p>
+        </article>
+        <article class="feature">
+          <div class="feature__line"><span class="feature__num">10</span><h3 class="feature__title">QR-код</h3></div>
+          <p class="feature__text">QR код на пластиковой карте Матричный (двухмерный код), который легко распознается сканирующими устройствами, в том числе камерами мобильных телефонов.</p>
+        </article>
+        <article class="feature">
+          <div class="feature__line"><span class="feature__num">11</span><h3 class="feature__title">Штрих-код</h3></div>
+          <p class="feature__text">Широко распространенный способ персонализации пластиковых карт. Штрих-кодовый символ состоит из серии линий и промежутков различной толщины, при этом линии и промежутки разбиты на группы, которые представляют собой распознаваемые символы. Наиболее популярные виды: EAN (EAN-8 состоит из 8 цифр, EAN-13 — используются 13 цифр), UPC (UPC-A, UPC-E), Code39, Code128 (UPC/EAN-128).</p>
+        </article>
+        <article class="feature">
+          <div class="feature__line"><span class="feature__num">12</span><h3 class="feature__title">Scratch-полоса</h3></div>
+          <p class="feature__text">(Стираемая полоса) — непрозрачный защитный слой, который служит для защиты конфиденциальной информации. Для стирания обычно используют монеты. Scratch-полоса широко применяется в предоплатных картах, картах оплаты услуг связи и интернет, сим-картах операторов связи. Например, используется для защиты пин-кода.</p>
+        </article>
+        <article class="feature">
+          <div class="feature__line"><span class="feature__num">13</span><h3 class="feature__title">Магнитная полоса</h3></div>
+          <p class="feature__text">Магнитная полоса позволяет записывать на карту информацию для считывающих электронных устройств, таких как различные терминалы, банкоматы, системы доступа и прочие. Также это элемент защиты пластиковой карты.</p>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─────────────────────────── PLASTIC TYPES ─────────────────────────── -->
+<section class="plastic">
+  <div class="container">
+    <h2 class="section-heading section-heading--brand">Виды пластика</h2>
+
+    <figure class="plastic__figure">
+      <img src="assets/plastic-types.png" alt="Образцы пластика для карт" loading="lazy">
+    </figure>
+
+    <div class="plastic__list">
+      <article class="prose">
+        <h3 class="prose__title">Пластик белый</h3>
+        <p class="prose__text">Универсальный материал для пластиковых карт: ровный белый цвет обеспечивает точную цветопередачу при печати дисконтных, клубных и ID‑карт.</p>
+      </article>
+      <article class="prose">
+        <h3 class="prose__title">Пластик перламутровый</h3>
+        <p class="prose__text">Пластик с металлизированным эффектом для премиальных карт: благородное сияние повышает заметность и статус программы лояльности.</p>
+      </article>
+      <article class="prose">
+        <h3 class="prose__title">Пластик золотой</h3>
+        <p class="prose__text">Насыщенный «золотой» фон для VIP‑ и подарочных карт: подчёркивает премиальность бренда и отлично сочетается с тиснением фольгой.</p>
+      </article>
+      <article class="prose">
+        <h3 class="prose__title">Прозрачный / полупрозрачный</h3>
+        <p class="prose__text">Эффектные прозрачные карты и визитки из пластика: современный вид, возможность частичной заливки и акцентной печати с белой подложкой.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ─────────────────────────── COATING ─────────────────────────── -->
+<section class="coating">
+  <div class="container">
+    <h2 class="section-heading section-heading--brand">Виды покрытия</h2>
+
+    <div class="coating__card">
+      <figure class="coating__figure">
+        <img src="assets/lamination.png" alt="Ламинированная пластиковая карта" loading="lazy">
+      </figure>
+      <div class="coating__intro">
+        <h3 class="coating__heading">Ламинированные карты</h3>
+        <p class="coating__lead">Ламинированные пластиковые карты — это максимальная износостойкость, защита от царапин и стабильная читаемость данных при ежедневном использовании; правильно выбранный ламинат продлевает срок службы и усиливает визуальный эффект.</p>
+      </div>
+    </div>
+
+    <div class="coating__types">
+      <article class="prose">
+        <h4 class="prose__subtitle">Глянцевая ламинация</h4>
+        <ul class="bullets">
+          <li>Яркая цветопередача и «глубина» изображения, эффект фото.</li>
+          <li>Рекомендуется для светлых макетов; на тёмных фонах царапины заметнее.</li>
+        </ul>
+      </article>
+      <article class="prose">
+        <h4 class="prose__subtitle">Матовая ламинация</h4>
+        <ul class="bullets">
+          <li>Минимум бликов, лучше читаемость текста и штрих‑кодов.</li>
+          <li>Оптимальна для тёмных дизайнов; скрывает следы эксплуатации</li>
+        </ul>
+      </article>
+      <article class="prose">
+        <h4 class="prose__subtitle">Фактурная ламинация</h4>
+        <ul class="bullets">
+          <li>Тактильный рельеф (linen/soft‑touch/anti‑fingerprint) и премиальный вид.</li>
+          <li>Сложнее в подделке, лучше сопротивляется микроцарапинам и отпечаткам.</li>
+        </ul>
+      </article>
+    </div>
+
+    <h3 class="prose__title">Что даёт ламинация?</h3>
+    <ul class="bullets">
+      <li>Защита печати и персонализации (номера, штрих‑код/QR, имена).</li>
+      <li>Стабильная работа карт в кошельках, кардхолдерах и терминалах.</li>
+      <li>Возможность сочетать с выборочным УФ‑лаком, тиснением фольгой и антискретч‑плёнками.</li>
+    </ul>
+
+    <p class="coating__outro">Нужна рекомендация под ваш макет и условия эксплуатации? Подберём тип ламинации (глянец/мат/фактура) и толщину покрытия, чтобы карта выглядела эффектно и служила дольше.</p>
+  </div>
+</section>
+
+<!-- ─────────────────────────── OWN DESIGN ─────────────────────────── -->
+<section class="design">
+  <div class="container">
+    <h2 class="section-heading section-heading--brand">Пластиковые карты со своим дизайном</h2>
+
+    <div class="design__grid">
+      <div class="design__left">
+        <h3 class="design__subheading">Скачайте макет в удобном расширении</h3>
+        <div class="formats">
+          <a class="format" href="#" aria-label="Скачать макет PDF">
+            <img src="assets/icon-pdf.png" alt="" width="49" height="62" loading="lazy">
+          </a>
+          <a class="format" href="#" aria-label="Скачать макет CDR">
+            <img src="assets/icon-crd.png" alt="" width="49" height="62" loading="lazy">
+          </a>
+          <a class="format" href="#" aria-label="Скачать макет DOC">
+            <img src="assets/icon-doc.png" alt="" width="49" height="62" loading="lazy">
+          </a>
+        </div>
+      </div>
+
+      <div class="design__right">
+        <p class="design__text">
+          Если представление, каким должен быть дизайн пластиковой карты, уже чётко сформировалось и
+          нашло цифровое воплощение – отправьте макет. Мы рассчитаем стоимость печати пластиковых карт
+          и обозначим сроки, когда готовые дизайнерские карточки попадут к вам в руки. Цена печати
+          зависит от тиража. Берёмся за экспресс-дизайн и срочное производство пластиковых карт.
+        </p>
+
+        <div class="accordion">
+          <details class="accordion__item" open>
+            <summary class="accordion__title">
+              Общие требования
+              <svg class="accordion__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
+            </summary>
+            <div class="accordion__body">
+              <ul class="dash-list">
+                <li>Поддерживаемый формат файлов: cdr, psd, ai, pdf;</li>
+                <li>Макет должен быть в масштабе 1:1 в цветовой системе CMYK;</li>
+                <li>Все шрифты должны быть переведены в кривые либо предоставлены в отдельной папке;</li>
+                <li>Размер печатного макета: 89х57 мм (данный размер с учетом запаса под обрез – по 1.5 мм с каждой стороны);</li>
+                <li>Размер готового изделия: 86х54 мм;</li>
+                <li>Область печати информации: 80х48 мм;</li>
+                <li>Любая переменная информация (печатный номер, штрих-код, тиснение) должна располагаться на отдельном слое с возможностью дальнейшего редактирования.</li>
+              </ul>
+            </div>
+          </details>
+
+          <details class="accordion__item" open>
+            <summary class="accordion__title">
+              Эмбоссирование
+              <svg class="accordion__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
+            </summary>
+            <div class="accordion__body">
+              <ul class="dash-list">
+                <li>Эмбоссирование выполняется на пластиковой карте в горизонтальной ориентации;</li>
+                <li>Отступы от края карты / панели для подписи / магнитной полосы и т.п. - не менее 5 мм;</li>
+                <li>Доступные шрифты - Farrington OCR (высота 4,5 мм, только цифры от 0 до 9), Cyrillic/ Standart Gothic (высота 3,0 мм, латиница заглавные буквы, символы . , &amp; ‘ — / и цифры от 0 до 9);</li>
+              </ul>
+            </div>
+          </details>
+
+          <details class="accordion__item" open>
+            <summary class="accordion__title">
+              Магнитная полоса
+              <svg class="accordion__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
+            </summary>
+            <div class="accordion__body">
+              <p class="design__text design__text--tight">Магнитная полоса:</p>
+              <ul class="dash-list">
+                <li>Ширина магнитной полосы: 12.7 мм;</li>
+                <li>Отступ от края готовой карты: 4 мм (может быть сверху либо снизу).</li>
+              </ul>
+            </div>
+          </details>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ─────────────────────────── FOOTER ─────────────────────────── -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer__content">
+      <div class="footer__col footer__col--about">
+        <img class="footer__logo" src="assets/logo.png" alt="БелПолКард" width="34" height="43">
+        <div class="footer__about">
+          <p class="footer__company">ООО “БелПолКард”</p>
+          <p class="footer__company">УНП 291338545</p>
+          <p class="footer__legal">Зарегистрирована в едином государственном регистре юридических лиц и предпринимателей 2014-08-27.<br>Свидетельство о регистрации № 150000000.</p>
+        </div>
+      </div>
+
+      <div class="footer__col footer__col--links">
+        <ul class="footer__links">
+          <li><a href="#">Пластиковые карты</a></li>
+          <li><a href="#">Карты с RFID-чипами</a></li>
+          <li><a href="#">RFID-браслеты</a></li>
+          <li><a href="#">RFID-брелоки</a></li>
+          <li><a href="#">Рекламная продукция</a></li>
+        </ul>
+        <ul class="footer__links">
+          <li><a href="#">Доставка и оплата</a></li>
+          <li><a href="#">Контакты</a></li>
+          <li><a href="#">Политика конфиденциальности</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__col footer__col--contact">
+        <a class="btn btn--215" href="#">Заказать звонок</a>
+
+        <div class="footer__contacts">
+          <div class="footer__contact">
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M14.05 2a9 9 0 0 1 8 7.94"/><path d="M14.05 6A5 5 0 0 1 18 10"/>
+              <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+            </svg>
+            <a class="footer__phone" href="tel:+375336025004">+375 (33) 602-50-04</a>
+          </div>
+          <div class="footer__contact">
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M21 7.5V6a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h3.5"/>
+              <path d="M16 2v4"/><path d="M8 2v4"/><path d="M3 10h5"/>
+              <path d="M17.5 17.5 16 16.3V14"/><circle cx="16" cy="16" r="6"/>
+            </svg>
+            <span class="footer__meta">09:00 - 17:00 в будни</span>
+          </div>
+          <div class="footer__contact">
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <rect width="20" height="16" x="2" y="4" rx="2"/>
+              <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
+            </svg>
+            <a class="footer__meta" href="mailto:info@bcard.by">info@bcard.by</a>
+          </div>
+        </div>
+
+        <div class="footer__social">
+          <a class="social__link social__link--ig social__link--sm" href="#" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <rect width="20" height="20" x="2" y="2" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1.2" fill="currentColor" stroke="none"/>
+            </svg>
+          </a>
+          <a class="social__link social__link--yt social__link--sm" href="#" aria-label="YouTube">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M23 12s0-3.9-.5-5.8a3 3 0 0 0-2.1-2.1C18.5 3.6 12 3.6 12 3.6s-6.5 0-8.4.5a3 3 0 0 0-2.1 2.1C1 8.1 1 12 1 12s0 3.9.5 5.8a3 3 0 0 0 2.1 2.1c1.9.5 8.4.5 8.4.5s6.5 0 8.4-.5a3 3 0 0 0 2.1-2.1C23 15.9 23 12 23 12zM9.8 15.6V8.4l6.3 3.6-6.3 3.6z"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer__credits">
+      <div class="footer__divider" role="presentation"></div>
+      <div class="footer__row">
+        <p class="footer__copy">© 2014-2024 БелПолКард. Все права зарезервированы</p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  (function () {
+    var nav = document.querySelector('.mainnav');
+    var burger = nav.querySelector('.burger');
+
+    function setOpen(open) {
+      nav.classList.toggle('is-open', open);
+      burger.setAttribute('aria-expanded', String(open));
+      burger.setAttribute('aria-label', open ? 'Закрыть меню' : 'Открыть меню');
+    }
+
+    burger.addEventListener('click', function () {
+      setOpen(burger.getAttribute('aria-expanded') !== 'true');
+    });
+
+    nav.addEventListener('click', function (e) {
+      if (e.target.closest('.mainnav__link')) setOpen(false);
+    });
+
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape' && nav.classList.contains('is-open')) {
+        setOpen(false);
+        burger.focus();
+      }
+    });
+
+    document.addEventListener('click', function (e) {
+      if (nav.classList.contains('is-open') && !nav.contains(e.target)) setOpen(false);
+    });
+
+    // Меню открывается только под бургером — при возврате на десктоп сбрасываем
+    var wide = window.matchMedia('(min-width: 1101px)');
+    (wide.addEventListener ? wide.addEventListener.bind(wide, 'change') : wide.addListener.bind(wide))(function (e) {
+      if (e.matches) setOpen(false);
+    });
+  })();
+</script>
+
+</body>
+</html>

@@ -1,0 +1,10 @@
+# Локальные настройки Claude Code
+.claude/settings.local.json
+
+# Исходники шрифтов — качаются скриптом fonts/build.sh
+.fontsrc/
+
+# Служебное
+.DS_Store
+_tmp_*.html
+venv/
