@@ -1118,7 +1118,7 @@ a.footer__meta:hover { color: var(--brand); }
 /* Ниже 400px логотипу уже не хватает места рядом с телефоном */
 @media (max-width: 399px) {
   .logo img {
-    width: 26px;
+    width: 25px;
     height: 32px;
   }
 }
