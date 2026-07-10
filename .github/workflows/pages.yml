@@ -28,10 +28,16 @@ jobs:
 
       - uses: actions/configure-pages@v5
 
-      # Сайт статический: заливаем корень репозитория как есть
+      # Сайт статический. Служебные каталоги не публикуем: из-за .nojekyll
+      # Pages отдаёт и файлы, начинающиеся с точки.
+      - name: Собрать содержимое сайта
+        run: |
+          mkdir -p _site
+          cp -r index.html styles.css assets fonts README.md .nojekyll _site/
+
       - uses: actions/upload-pages-artifact@v3
         with:
-          path: .
+          path: _site
 
       - id: deployment
         uses: actions/deploy-pages@v4
