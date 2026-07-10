@@ -635,9 +635,8 @@ a.contact__value:hover { color: var(--brand-hover); }
   color: var(--ink);
 }
 
-/* В макете это обычное начертание в верхнем регистре, не bold */
 .prose__subtitle {
-  font-weight: 400;
+  font-weight: 500;
   font-size: var(--fs-body);
   line-height: 1.5;
   text-transform: uppercase;
