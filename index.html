@@ -82,9 +82,9 @@
       </button>
 
       <div class="mainnav__list" id="mainnav-list">
-        <a class="mainnav__link" href="#" aria-current="page">Пластиковые карты</a>
+        <a class="mainnav__link" href="index.html" aria-current="page">Пластиковые карты</a>
         <span class="mainnav__divider" aria-hidden="true"></span>
-        <a class="mainnav__link" href="#">RFID-продукция</a>
+        <a class="mainnav__link" href="rfid.html">RFID-продукция</a>
         <span class="mainnav__divider" aria-hidden="true"></span>
         <a class="mainnav__link" href="#">POS-материалы</a>
         <span class="mainnav__divider" aria-hidden="true"></span>
@@ -156,7 +156,8 @@
   <div class="container">
     <h2 class="section-heading section-heading--brand">Виды пластиковых карт</h2>
     <ul class="cards">
-      <li class="card">
+      <li class="card card--link">
+        <a class="card__cover" href="card-discount.html" aria-label="Дисконтные карты — подробнее"></a>
         <div class="card__media"><img src="assets/card-discount.webp" alt="Дисконтные карты" loading="lazy"></div>
         <h3 class="card__title">Дисконтные карты</h3>
       </li>
@@ -218,7 +219,7 @@
 </section>
 
 <!-- ─────────────────────────── PERSONALIZE ─────────────────────────── -->
-<section class="personalize">
+<section class="personalize" id="personalize">
   <div class="container">
     <h2 class="section-heading section-heading--brand">Виды персонализации</h2>
 
@@ -466,10 +467,10 @@
 
       <div class="footer__col footer__col--links">
         <ul class="footer__links">
-          <li><a href="#">Пластиковые карты</a></li>
-          <li><a href="#">Карты с RFID-чипами</a></li>
-          <li><a href="#">RFID-браслеты</a></li>
-          <li><a href="#">RFID-брелоки</a></li>
+          <li><a href="index.html">Пластиковые карты</a></li>
+          <li><a href="rfid.html">Карты с RFID-чипами</a></li>
+          <li><a href="rfid.html">RFID-браслеты</a></li>
+          <li><a href="rfid.html">RFID-брелоки</a></li>
           <li><a href="#">Рекламная продукция</a></li>
         </ul>
         <ul class="footer__links">
@@ -529,43 +530,6 @@
   </div>
 </footer>
 
-<script>
-  (function () {
-    var nav = document.querySelector('.mainnav');
-    var burger = nav.querySelector('.burger');
-
-    function setOpen(open) {
-      nav.classList.toggle('is-open', open);
-      burger.setAttribute('aria-expanded', String(open));
-      burger.setAttribute('aria-label', open ? 'Закрыть меню' : 'Открыть меню');
-    }
-
-    burger.addEventListener('click', function () {
-      setOpen(burger.getAttribute('aria-expanded') !== 'true');
-    });
-
-    nav.addEventListener('click', function (e) {
-      if (e.target.closest('.mainnav__link')) setOpen(false);
-    });
-
-    document.addEventListener('keydown', function (e) {
-      if (e.key === 'Escape' && nav.classList.contains('is-open')) {
-        setOpen(false);
-        burger.focus();
-      }
-    });
-
-    document.addEventListener('click', function (e) {
-      if (nav.classList.contains('is-open') && !nav.contains(e.target)) setOpen(false);
-    });
-
-    // Меню открывается только под бургером — при возврате на десктоп сбрасываем
-    var wide = window.matchMedia('(min-width: 1101px)');
-    (wide.addEventListener ? wide.addEventListener.bind(wide, 'change') : wide.addListener.bind(wide))(function (e) {
-      if (e.matches) setOpen(false);
-    });
-  })();
-</script>
-
+<script src="app.js"></script>
 </body>
 </html>

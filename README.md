@@ -14,11 +14,19 @@ python3 -m http.server 4321
 ## Структура
 
 ```
-index.html      разметка, 11 секций
-styles.css      стили, токены из макета
-assets/         изображения из Figma (webp)
-fonts/          Lato и Jost (woff2, self-hosted)
+index.html          главная — «Пластиковые карты», 11 секций
+rfid.html           «RFID-продукция» — карточки, браслеты, брелоки
+card-discount.html  карточка товара «Скидочные карты»
+styles.css          стили, токены из макета
+app.js              бургер-меню, галерея товара, формы
+assets/             изображения из Figma (webp)
+fonts/              Lato и Jost (woff2, self-hosted)
 ```
+
+Шапка и футер продублированы в каждой странице (статический сайт без
+шаблонизатора); общий JS вынесен в `app.js`. Внутренние страницы
+использовали в макете шрифты UNCAGE и Gilroy — заменены на Lato/Jost по
+ролям (UNCAGE — капсовый display-шрифт → Lato + uppercase).
 
 ## Как это устроено
 
