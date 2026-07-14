@@ -982,7 +982,12 @@ a.footer__meta:hover { color: var(--brand); }
   font-size: clamp(28px, calc(12px + 2.0833vw), 42px); /* 28 на 768 → 42 на 1440 */
 }
 
-/* Hero RFID: изображение крупнее, прижато вправо */
+/* Hero RFID: изображение крупнее, прижато вправо.
+   Гэпы у фрейма RFID свои (не как на главной): title 16, text 16, row 32. */
+.hero--rfid .hero__row { gap: 32px; }
+.hero--rfid .hero__title { gap: 16px; }
+.hero--rfid .hero__text { margin-top: 16px; }
+
 .hero--rfid .hero__media--rfid {
   flex: 0 1 456px;
   width: 456px;
@@ -991,6 +996,9 @@ a.footer__meta:hover { color: var(--brand); }
 }
 
 .hero__media--rfid img { width: 100%; }
+
+/* Примечание в секциях RFID отбивается от карточек на gap секции (62) */
+.rfidgrid .note { margin-top: 62px; }
 
 /* ─── Секции-сетки товаров ─── */
 .rfidgrid { padding: 112px 0; }
