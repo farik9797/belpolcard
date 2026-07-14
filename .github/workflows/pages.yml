@@ -33,7 +33,7 @@ jobs:
       - name: Собрать содержимое сайта
         run: |
           mkdir -p _site
-          cp -r index.html rfid.html card-discount.html styles.css app.js assets fonts README.md .nojekyll _site/
+          cp -r index.html rfid.html card-discount.html pos.html styles.css app.js assets fonts README.md .nojekyll _site/
 
       - uses: actions/upload-pages-artifact@v3
         with:
