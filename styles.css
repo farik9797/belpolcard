@@ -988,6 +988,17 @@ a.footer__meta:hover { color: var(--brand); }
 .hero--rfid .hero__title { gap: 16px; }
 .hero--rfid .hero__text { margin-top: 16px; }
 
+/* «Бесконтактные ключи» в одну строку. Lato Black шире капсового UNCAGE
+   из макета, поэтому размер привязываем к ширине самой колонки (cqi):
+   7cqi всегда оставляет ~7% запаса, текст не переносится и не переполняет
+   на любой ширине; cap 48px не даёт заголовку раздуться. */
+.hero--rfid .hero__left { container-type: inline-size; }
+
+.hero--rfid .hero__heading {
+  font-size: min(48px, 7cqi);
+  white-space: nowrap;
+}
+
 .hero--rfid .hero__media--rfid {
   flex: 0 1 456px;
   width: 456px;
