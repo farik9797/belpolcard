@@ -1096,6 +1096,67 @@ a.cinfo__text:hover { color: var(--brand); }
   object-fit: cover;
 }
 
+/* ─── Инфостраница (Доставка и оплата) ─── */
+.infopage { padding: 24px 0 50px; }
+
+.infopage__title {
+  margin-bottom: 50px;
+  font-weight: 900;
+  font-size: var(--fs-h1);
+  line-height: 1.2;
+  text-transform: uppercase;
+  color: var(--ink);
+}
+
+/* Подзаголовок раздела: Lato Bold 35, капс, синий */
+.section-heading--sm {
+  font-size: clamp(24px, calc(11.4px + 1.637vw), 35px); /* 24 на 768 → 35 на 1440 */
+}
+
+.infopage__subheading { margin-bottom: 24px; }
+
+/* Текстовый блок: абзацы с межстрочным интервалом как в макете */
+.rich {
+  font-weight: 400;
+  font-size: var(--fs-body);
+  line-height: 1.6;
+  color: var(--ink);
+}
+
+.rich p { margin: 0; }
+
+/* Фотогалерея доставки: 4 фото в ряд */
+.photos {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+  margin-top: 50px;
+}
+
+.photos__item {
+  aspect-ratio: 282 / 260;
+  border-radius: 8px;
+  overflow: hidden;
+  background: var(--surface);
+}
+
+.photos__item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.infopage .note { margin-top: 50px; }
+
+/* Блок оплаты на светлом фоне */
+.payment {
+  background: var(--surface);
+  padding: 60px 0;
+}
+
+.payment .section-heading--sm { margin-bottom: 30px; }
+.payment .note { margin-top: 30px; }
+
 /* ─── Секции-сетки товаров ─── */
 .rfidgrid { padding: 112px 0; }
 .rfidgrid--alt { background: var(--surface); }
@@ -1712,6 +1773,23 @@ a.cinfo__text:hover { color: var(--brand); }
 @media (max-width: 900px) {
   .contactpage__grid { grid-template-columns: 1fr; gap: 32px; }
   .contactpage__map { aspect-ratio: 16 / 10; max-height: 420px; }
+}
+
+/* ─── Адаптив «Доставка и оплата» ─── */
+@media (max-width: 900px) {
+  .photos { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 760px) {
+  .infopage { padding: 24px 0 40px; }
+  .infopage__title { margin-bottom: 32px; }
+  .photos { margin-top: 32px; }
+  .infopage .note { margin-top: 32px; }
+  .payment { padding: 40px 0; }
+}
+
+@media (max-width: 460px) {
+  .photos { grid-template-columns: 1fr; }
 }
 
 @media (prefers-reduced-motion: reduce) {
