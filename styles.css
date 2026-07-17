@@ -1082,9 +1082,13 @@ a.footer__meta:hover { color: var(--brand); }
 a.cinfo__text:hover { color: var(--brand); }
 
 .contactpage__map {
+  display: block;
   aspect-ratio: 588 / 390;
   overflow: hidden;
+  transition: opacity 0.18s ease;
 }
+
+.contactpage__map:hover { opacity: 0.92; }
 
 .contactpage__map img {
   width: 100%;
