@@ -955,6 +955,15 @@ a.footer__meta:hover { color: var(--brand); }
   gap: 10.26px;
 }
 
+/* Второй столбец футера: ссылки + соцсети под ними (как в макете) */
+.footer__linkcol {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.footer__social--start { justify-content: flex-start; }
+
 .footer__credits { margin-top: 24px; }
 
 .footer__divider {
