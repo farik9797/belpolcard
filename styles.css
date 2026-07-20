@@ -1115,6 +1115,14 @@ a.cinfo__text:hover { color: var(--brand); }
   line-height: 1.2;
   text-transform: uppercase;
   color: var(--ink);
+  /* Защита от разрыва макета сверхдлинным словом (напр. «КОНФИДЕНЦИАЛЬНОСТИ») */
+  overflow-wrap: break-word;
+}
+
+/* На узких экранах уменьшаем заголовок так, чтобы длинное слово влезало
+   целиком (без переноса): 6.7vw держит «КОНФИДЕНЦИАЛЬНОСТИ» в одной строке. */
+@media (max-width: 600px) {
+  .infopage__title { font-size: min(32px, 6.7vw); }
 }
 
 /* Подзаголовок раздела: Lato Bold 35, капс, синий */
@@ -1165,6 +1173,28 @@ a.cinfo__text:hover { color: var(--brand); }
 
 .payment .section-heading--sm { margin-bottom: 30px; }
 .payment .note { margin-top: 30px; }
+
+/* ─── Текстовый документ (Политика конфиденциальности) ─── */
+.doc {
+  max-width: 900px;
+  font-weight: 400;
+  font-size: var(--fs-body);
+  line-height: 1.6;
+  color: var(--ink);
+}
+
+.doc p { margin: 0 0 16px; }
+.doc p:last-child { margin-bottom: 0; }
+
+.doc__intro { margin-bottom: 8px; }
+
+.doc__heading {
+  margin: 32px 0 12px;
+  font-weight: 700;
+  font-size: var(--fs-title);
+  line-height: 1.3;
+  color: var(--ink);
+}
 
 /* ─── Секции-сетки товаров ─── */
 .rfidgrid { padding: 112px 0; }
