@@ -926,7 +926,7 @@ a.contact__value:hover { color: var(--brand-hover); }
   flex-direction: column;
   align-items: flex-end;
   gap: 32px;
-  flex: 0 0 227px;
+  flex: 0 0 264px;
 }
 
 .footer__contacts {
@@ -944,7 +944,7 @@ a.contact__value:hover { color: var(--brand-hover); }
 
 .footer__phone {
   font-weight: 700;
-  font-size: var(--fs-black);
+  font-size: 20px;
   line-height: 1.2;
 }
 
@@ -953,7 +953,7 @@ a.contact__value:hover { color: var(--brand-hover); }
 .footer__meta {
   font-family: var(--font-ui);
   font-weight: 400;
-  font-size: var(--fs-ui);
+  font-size: 20px;
   line-height: 1.6;
 }
 
@@ -1776,7 +1776,11 @@ a.cinfo__text:hover { color: var(--brand); }
   .format img { height: 44px; }
 
   .btn--282,
-  .btn--215 { width: 100%; max-width: 320px; }
+  .btn--215 {
+    width: 100%;
+    max-width: 375px;
+    margin: 0 auto;
+  }
 
   /* Ссылки остаются в два столбца (как в макете); колонки тянутся по месту */
   .footer__col--links { gap: 16px; }
