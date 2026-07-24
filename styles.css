@@ -859,18 +859,29 @@ a.contact__value:hover { color: var(--brand-hover); }
   gap: 64px;
 }
 
-.footer__col--about { flex: 0 1 410px; }
+.footer__col--about {
+  flex: 0 1 410px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* Логотип + реквизиты: на десктопе колонкой, на мобильном — в строку */
+.footer__brand {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.footer__ident {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
 
 .footer__logo {
   width: 34px;
   height: 43px;
-  margin-bottom: 16px;
-}
-
-.footer__about {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
 }
 
 .footer__company {
@@ -879,8 +890,6 @@ a.contact__value:hover { color: var(--brand-hover); }
   font-size: var(--fs-ui);
   line-height: 1.6;
 }
-
-.footer__company + .footer__company { margin-top: -12px; }
 
 .footer__legal {
   font-family: var(--font-ui);
@@ -904,9 +913,9 @@ a.contact__value:hover { color: var(--brand-hover); }
   line-height: 1.6;
 }
 
-/* Ширины колонок из макета — задают перенос «Политика конфиденциальности» */
-.footer__links:first-child { width: 176px; }
-.footer__links:last-child { width: 187px; }
+/* Ширины колонок из макета — задают перенос «Политика конфиденциальности».
+   Первый столбец — прямой ul, второй — ul внутри .footer__linkcol. */
+.footer__col--links > .footer__links { width: 176px; }
 
 .footer__links a:hover { color: var(--brand); }
 
@@ -960,9 +969,13 @@ a.footer__meta:hover { color: var(--brand); }
   display: flex;
   flex-direction: column;
   gap: 12px;
+  width: 187px;
 }
 
 .footer__social--start { justify-content: flex-start; }
+
+/* Соцсети у контактов — только для мобильной раскладки */
+.footer__social--contact { display: none; }
 
 .footer__credits { margin-top: 24px; }
 
@@ -1703,9 +1716,28 @@ a.cinfo__text:hover { color: var(--brand); }
   .footer__col--about,
   .footer__col--contact { flex: 1 1 auto; width: 100%; }
 
-  .footer__col--contact { align-items: flex-start; }
+  /* Логотип и название — в строку */
+  .footer__brand { flex-direction: row; align-items: center; }
 
-  .footer__social { justify-content: flex-start; }
+  /* Соцсети переезжают из колонки ссылок к контактам (низ справа) */
+  .footer__linkcol .footer__social--start { display: none; }
+
+  /* Контакты: кнопка на всю ширину, контакты слева, соцсети — в правом
+     нижнем углу (на уровне e-mail), как в макете */
+  .footer__col--contact {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+  }
+  .footer__col--contact .btn { align-self: stretch; }
+  .footer__social--contact {
+    display: flex;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
 }
 
 @media (max-width: 760px) {
@@ -1744,7 +1776,10 @@ a.cinfo__text:hover { color: var(--brand); }
   .btn--282,
   .btn--215 { width: 100%; max-width: 320px; }
 
-  .footer__col--links { flex-direction: column; gap: 16px; }
+  /* Ссылки остаются в два столбца (как в макете); колонки тянутся по месту */
+  .footer__col--links { gap: 16px; }
+  .footer__col--links > .footer__links,
+  .footer__linkcol { width: auto; flex: 1 1 0; min-width: 0; }
 }
 
 @media (max-width: 480px) {
