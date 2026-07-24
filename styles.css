@@ -882,6 +882,8 @@ a.contact__value:hover { color: var(--brand-hover); }
 .footer__logo {
   width: 34px;
   height: 43px;
+  /* Логотип белым на тёмном футере (из синего PNG — фильтром) */
+  filter: brightness(0) invert(1);
 }
 
 .footer__company {
