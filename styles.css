@@ -292,8 +292,8 @@ a.contact__value:hover { color: var(--brand-hover); }
 }
 
 .social__link svg {
-  width: clamp(14px, 1.25vw, 18px);
-  height: clamp(14px, 1.25vw, 18px);
+  width: 44%;
+  height: 44%;
 }
 
 .social__link:hover { opacity: 0.85; }
@@ -302,7 +302,6 @@ a.contact__value:hover { color: var(--brand-hover); }
 .social__link--ig { background: var(--ig); }
 
 .social__link--sm { width: 34px; height: 34px; }
-.social__link--sm svg { width: 15px; height: 15px; }
 
 /* Тёмное меню */
 .mainnav {
@@ -925,7 +924,7 @@ a.contact__value:hover { color: var(--brand-hover); }
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  gap: 32px;
+  gap: 30px;
   flex: 0 0 264px;
 }
 
@@ -943,18 +942,19 @@ a.contact__value:hover { color: var(--brand-hover); }
 }
 
 .footer__phone {
+  font-family: var(--font-display);
   font-weight: 700;
-  font-size: 20px;
-  line-height: 1.2;
+  font-size: 24px;
+  line-height: 1.5;
 }
 
 .footer__phone:hover { color: var(--brand); }
 
 .footer__meta {
-  font-family: var(--font-ui);
+  font-family: var(--font-display);
   font-weight: 400;
   font-size: 20px;
-  line-height: 1.6;
+  line-height: 1.5;
 }
 
 a.footer__meta:hover { color: var(--brand); }
@@ -979,7 +979,7 @@ a.footer__meta:hover { color: var(--brand); }
 /* Соцсети у контактов — только для мобильной раскладки */
 .footer__social--contact { display: none; }
 
-.footer__credits { margin-top: 24px; }
+.footer__credits { margin-top: 20px; }
 
 .footer__divider {
   height: 1px;
