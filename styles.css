@@ -1070,7 +1070,7 @@ a.footer__meta:hover { color: var(--brand); }
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 24px;
-  align-items: start;
+  align-items: center;
 }
 
 .cinfo {
@@ -1177,6 +1177,10 @@ a.cinfo__text:hover { color: var(--brand); }
   height: 100%;
   object-fit: cover;
 }
+
+/* Карусель фото (активна только на мобильном) */
+.photos-carousel { position: relative; }
+.photos-ctrl { display: none; }
 
 .infopage .note { margin-top: 50px; }
 
@@ -1320,7 +1324,7 @@ a.cinfo__text:hover { color: var(--brand); }
   margin-top: 24px;
   padding: 24px;
   background: #fff6db;
-  border-left: 4px solid var(--brand);
+  border-left: 4px solid #f5a623;
   border-radius: 0 8px 8px 0;
   font-family: var(--font-ui);
   font-weight: 400;
@@ -1868,8 +1872,65 @@ a.cinfo__text:hover { color: var(--brand); }
   .payment { padding: 40px 0; }
 }
 
-@media (max-width: 460px) {
-  .photos { grid-template-columns: 1fr; }
+@media (max-width: 760px) {
+  .photos-carousel.is-carousel { overflow: hidden; }
+  .photos-carousel.is-carousel .photos {
+    display: flex;
+    grid-template-columns: none;
+    gap: 16px;
+    will-change: transform;
+    transition: transform 0.35s ease;
+  }
+  .photos-carousel.is-carousel .photos__item {
+    flex: 0 0 calc((100% - 16px) / 2);
+  }
+  .photos-carousel.is-carousel .photos-ctrl {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-top: 20px;
+  }
+  .photos-arrow {
+    flex: none;
+    width: 28px;
+    height: 28px;
+    display: grid;
+    place-items: center;
+    padding: 0;
+    border: 0;
+    background: none;
+    color: var(--gray-2);
+    cursor: pointer;
+    transition: color 0.18s ease, opacity 0.18s ease;
+  }
+  .photos-arrow svg { width: 22px; height: 22px; }
+  .photos-arrow:hover:not(:disabled) { color: var(--brand); }
+  .photos-arrow:disabled { opacity: 0.3; cursor: default; }
+  .photos-count {
+    flex: none;
+    font-family: var(--font-ui);
+    font-weight: 700;
+    font-size: 16px;
+    letter-spacing: 0.04em;
+    color: var(--brand);
+    white-space: nowrap;
+  }
+  .photos-count__total { color: var(--gray-2); font-weight: 500; }
+  .photos-progress {
+    flex: 1 1 auto;
+    height: 2px;
+    background: var(--border);
+    border-radius: 2px;
+    overflow: hidden;
+  }
+  .photos-progress__bar {
+    display: block;
+    height: 100%;
+    width: 50%;
+    background: var(--brand);
+    border-radius: 2px;
+    transition: width 0.35s ease;
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {

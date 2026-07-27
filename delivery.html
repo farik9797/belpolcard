@@ -117,12 +117,24 @@
       <p>Мы доставляем продукцию собственного производства — пластиковые карты, RFID‑карты, пропуска, POS‑материалы и другие изделия — напрямую с производства в Бресте, работая с клиентами по всей Беларуси.</p>
     </div>
 
-    <ul class="photos">
-      <li class="photos__item"><img src="assets/delivery-1.webp" alt="Погрузка коробок с готовой продукцией" loading="lazy"></li>
-      <li class="photos__item"><img src="assets/delivery-2.webp" alt="Разгрузка коробок из курьерского автомобиля" loading="lazy"></li>
-      <li class="photos__item"><img src="assets/delivery-3.webp" alt="Упакованные пластиковые карты в коробке" loading="lazy"></li>
-      <li class="photos__item"><img src="assets/delivery-4.webp" alt="Подписание документов при получении заказа" loading="lazy"></li>
-    </ul>
+    <div class="photos-carousel" data-photos data-per="2">
+      <ul class="photos">
+        <li class="photos__item"><img src="assets/delivery-1.webp" alt="Погрузка коробок с готовой продукцией" loading="lazy"></li>
+        <li class="photos__item"><img src="assets/delivery-2.webp" alt="Разгрузка коробок из курьерского автомобиля" loading="lazy"></li>
+        <li class="photos__item"><img src="assets/delivery-3.webp" alt="Упакованные пластиковые карты в коробке" loading="lazy"></li>
+        <li class="photos__item"><img src="assets/delivery-4.webp" alt="Подписание документов при получении заказа" loading="lazy"></li>
+      </ul>
+      <div class="photos-ctrl" hidden>
+        <button class="photos-arrow photos-arrow--prev" type="button" aria-label="Предыдущие фото">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m15 18-6-6 6-6"/></svg>
+        </button>
+        <span class="photos-count" aria-hidden="true"></span>
+        <span class="photos-progress"><span class="photos-progress__bar"></span></span>
+        <button class="photos-arrow photos-arrow--next" type="button" aria-label="Следующие фото">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg>
+        </button>
+      </div>
+    </div>
 
     <p class="note">Готовую продукцию предварительно делим по упаковкам и аккуратно размещаем в коробках. Количество изделий в упаковке согласовывается заранее. Все коробки подписываются, после чего заказ отправляется вместе с накладной и необходимыми сопроводительными документами.</p>
   </div>
