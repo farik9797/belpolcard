@@ -1093,8 +1093,6 @@ a.footer__meta:hover { color: var(--brand); }
   color: var(--brand);
 }
 
-.cinfo__icon--img { display: block; }
-
 .cinfo__text {
   font-weight: 500;
   font-size: var(--fs-title);
@@ -1326,7 +1324,7 @@ a.cinfo__text:hover { color: var(--brand); }
   background: #fff6db;
   border-left: 4px solid #f5a623;
   border-radius: 0 8px 8px 0;
-  font-family: var(--font-ui);
+  font-family: var(--font-display);
   font-weight: 400;
   font-size: var(--fs-body);
   line-height: 1.6;
