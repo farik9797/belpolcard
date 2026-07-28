@@ -641,8 +641,9 @@ a.contact__value:hover { color: var(--brand-hover); }
 
 .prose__subtitle {
   font-weight: 500;
-  font-size: var(--fs-body);
-  line-height: 1.5;
+  font-size: var(--fs-title);
+  line-height: 1.6;
+  letter-spacing: 0.02em;
   text-transform: uppercase;
   color: var(--ink);
 }
