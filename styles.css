@@ -825,7 +825,7 @@ a.contact__value:hover { color: var(--brand-hover); }
   justify-content: space-between;
   gap: 12px;
   padding: 16px 0;
-  font-weight: 700;
+  font-weight: 900;
   font-size: var(--fs-black);
   line-height: 1.2;
   text-transform: uppercase;
@@ -834,6 +834,9 @@ a.contact__value:hover { color: var(--brand-hover); }
 }
 
 .accordion__title::-webkit-details-marker { display: none; }
+
+.accordion__body { padding-bottom: 16px; }
+.accordion__body p + p { margin-top: 12px; }
 
 .accordion__icon {
   width: 24px;
@@ -1419,11 +1422,11 @@ a.cinfo__text:hover { color: var(--brand); }
   color: var(--brand);
 }
 
-/* ─── Карточка товара (страница «Скидочные карты») ─── */
-.product { padding: 80px 0; }
+/* ─── Карточка товара (страница «Дисконтные карты») ─── */
+.product { padding: 24px 0 60px; }
 
 .product__title {
-  margin-bottom: 62px;
+  margin-bottom: 40px;
   font-weight: 900;
   font-size: var(--fs-h1);
   line-height: 1.2;
@@ -1445,7 +1448,7 @@ a.cinfo__text:hover { color: var(--brand); }
 }
 
 .gallery__main {
-  aspect-ratio: 588 / 440;
+  aspect-ratio: 185 / 130;
   border-radius: 8px;
   overflow: hidden;
   background: var(--surface);
@@ -1460,7 +1463,7 @@ a.cinfo__text:hover { color: var(--brand); }
 }
 
 .gallery__thumb {
-  aspect-ratio: 185 / 100;
+  aspect-ratio: 185 / 130;
   padding: 0;
   border: 1px solid var(--border);
   border-radius: 8px;
@@ -1477,66 +1480,21 @@ a.cinfo__text:hover { color: var(--brand); }
 .product__info {
   display: flex;
   flex-direction: column;
-  gap: 24px;
-}
-
-.product__sku {
-  font-weight: 500;
-  font-size: var(--fs-ui-sm);
-  line-height: 1.4;
-  letter-spacing: 0.02em;
-  text-transform: uppercase;
-  color: var(--ink);
+  gap: 20px;
 }
 
 .product__desc {
-  font-family: var(--font-ui);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  font-family: var(--font-display);
   font-weight: 400;
-  font-size: var(--fs-ui);
+  font-size: 18px;
   line-height: 1.6;
   color: var(--ink);
 }
 
-/* Таблица характеристик: ключ … значение с точечным лидером */
-.spec {
-  display: flex;
-  flex-direction: column;
-  gap: 6px;
-  margin: 0;
-}
-
-.spec__row {
-  display: grid;
-  grid-template-columns: minmax(120px, auto) 1fr;
-  gap: 8px;
-  align-items: baseline;
-}
-
-.spec__key {
-  position: relative;
-  font-family: var(--font-ui);
-  font-size: var(--fs-ui-sm);
-  line-height: 1.6;
-  color: var(--gray);
-  white-space: nowrap;
-}
-
-.spec__key::after {
-  content: "";
-  position: absolute;
-  left: 100%;
-  right: -8px;
-  bottom: 0.35em;
-  border-bottom: 1px dotted var(--divider);
-}
-
-.spec__val {
-  margin: 0;
-  font-family: var(--font-ui);
-  font-size: var(--fs-ui-sm);
-  line-height: 1.6;
-  color: var(--gray);
-}
+.product__desc p { margin: 0; }
 
 .product__buy {
   display: flex;
@@ -1547,9 +1505,10 @@ a.cinfo__text:hover { color: var(--brand); }
 }
 
 .product__price {
-  font-weight: 500;
-  font-size: clamp(24px, calc(13.333px + 1.3889vw), 32px); /* 32 на 1440 */
+  font-weight: 700;
+  font-size: clamp(28px, calc(14.286px + 1.7857vw), 40px); /* 40 на 1440 */
   line-height: 1.2;
+  text-transform: uppercase;
   color: var(--ink);
 }
 
@@ -1570,7 +1529,11 @@ a.cinfo__text:hover { color: var(--brand); }
 
 .perk .icon { width: 20px; height: 20px; color: var(--brand); }
 
-.note--tight { margin-top: 0; }
+.note--tight {
+  margin-top: 0;
+  font-family: var(--font-ui);
+  font-size: var(--fs-ui-sm);
+}
 
 .inline-link { color: var(--brand); text-decoration: underline; }
 .inline-link:hover { color: var(--brand-hover); }
@@ -1585,8 +1548,8 @@ a.cinfo__text:hover { color: var(--brand); }
 .samples__head { margin-bottom: 16px; }
 
 .samples__eyebrow {
-  font-weight: 400;
-  font-size: var(--fs-eyebrow);
+  font-weight: 500;
+  font-size: clamp(24px, calc(11.43px + 1.637vw), 35px);
   line-height: 1.2;
   letter-spacing: 0.02em;
   text-transform: uppercase;
@@ -1595,8 +1558,8 @@ a.cinfo__text:hover { color: var(--brand); }
 
 .samples__heading {
   margin-top: 8px;
-  font-weight: 500;
-  font-size: clamp(28px, calc(12px + 2.0833vw), 42px);
+  font-weight: 700;
+  font-size: clamp(28px, calc(5.143px + 2.976vw), 48px);
   line-height: 1.2;
   text-transform: uppercase;
   color: var(--brand);

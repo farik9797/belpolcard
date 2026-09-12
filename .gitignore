@@ -8,3 +8,9 @@
 .DS_Store
 _tmp_*.html
 venv/
+
+# secrets — never commit
+password.md
+
+# firecrawl local cache
+.firecrawl/
