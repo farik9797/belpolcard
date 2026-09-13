@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Пластиковые карты учащегося на заказ | БелПолКард</title>
+<meta name="description" content="Карты учащегося предназначены для школ, колледжей, вузов, учебных центров и программ дополнительного образования. Они объединяют идентификацию, пропуск и и">
+<link rel="icon" href="assets/logo.png">
+
+<link rel="preload" href="fonts/lato-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/lato-900.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/jost-400.woff2" as="font" type="font/woff2" crossorigin>
+
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="navbar">
+    <div class="container navbar__inner">
+      <a class="logo" href="index.html" aria-label="БелПолКард — на главную">
+        <img src="assets/logo.png" alt="БелПолКард" width="43" height="54">
+      </a>
+
+      <div class="contacts">
+        <div class="contact contact--phone">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M14.05 2a9 9 0 0 1 8 7.94"/><path d="M14.05 6A5 5 0 0 1 18 10"/>
+            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+          </svg>
+          <span class="contact__label">Звоните:</span>
+          <a class="contact__value" href="tel:+375336025004">+375 (33) 602-50-04</a>
+        </div>
+
+        <span class="contacts__divider" aria-hidden="true"></span>
+
+        <div class="contact contact--hours">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M21 7.5V6a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h3.5"/>
+            <path d="M16 2v4"/><path d="M8 2v4"/><path d="M3 10h5"/>
+            <path d="M17.5 17.5 16 16.3V14"/><circle cx="16" cy="16" r="6"/>
+          </svg>
+          <span class="contact__label">Работаем:</span>
+          <span class="contact__value">09:00 - 17:00 <span class="contact__value--muted">в будни</span></span>
+        </div>
+
+        <span class="contacts__divider" aria-hidden="true"></span>
+
+        <div class="contact contact--mail">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <rect width="20" height="16" x="2" y="4" rx="2"/>
+            <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
+          </svg>
+          <span class="contact__label">Пишите:</span>
+          <a class="contact__value" href="mailto:info@bcard.by">info@bcard.by</a>
+        </div>
+      </div>
+
+      <div class="social">
+        <a class="social__link social__link--yt" href="#" aria-label="YouTube">
+          <svg viewBox="0 0 16 11" fill="currentColor" aria-hidden="true"><path d="M15.1419 4.19993C15.1419 3.86836 15.0866 3.48153 15.0866 3.03943C15.0314 2.59733 14.9761 2.15523 14.9208 1.76839C14.8103 1.32629 14.6445 0.994723 14.3129 0.718412C14.0366 0.4421 13.6498 0.276308 13.263 0.221046C11.9919 0.0552589 10.113 0 7.57094 0C5.02888 0 3.09469 0.0552589 1.87892 0.221046C1.49208 0.276308 1.10525 0.4421 0.828935 0.718412C0.552623 0.994723 0.33157 1.32629 0.221046 1.76839C0.110521 2.15523 0.0552657 2.54207 0.0552657 3.03943C3.37212e-06 3.48153 0 3.86836 0 4.19993C0 4.5315 0 4.91834 0 5.47097C0 6.02359 0 6.46569 0 6.742C0 7.07357 0.0552657 7.46041 0.0552657 7.90251C0.110528 8.34461 0.165784 8.7867 0.221046 9.17354C0.33157 9.61564 0.497361 9.94722 0.828935 10.2235C1.10525 10.4998 1.49208 10.6656 1.87892 10.7209C3.14995 10.8867 5.02888 10.9419 7.57094 10.9419C10.113 10.9419 12.0472 10.8867 13.263 10.7209C13.6498 10.6656 14.0366 10.4998 14.3129 10.2235C14.5892 9.94722 14.8103 9.61564 14.9208 9.17354C15.0313 8.7867 15.0866 8.39987 15.0866 7.90251C15.1419 7.46041 15.1419 7.07357 15.1419 6.742C15.1419 6.41043 15.1419 6.02359 15.1419 5.47097C15.1419 4.91834 15.1419 4.47624 15.1419 4.19993ZM10.4998 5.91307L6.13412 8.62092C6.07886 8.67618 5.96833 8.73145 5.85781 8.73145C5.74728 8.73145 5.69202 8.73144 5.5815 8.67618C5.41571 8.56566 5.30518 8.39987 5.30518 8.17882V2.70785C5.30518 2.4868 5.41571 2.32102 5.5815 2.21049C5.74728 2.09997 5.96833 2.09997 6.13412 2.21049L10.4998 4.91834C10.6656 5.02887 10.7762 5.19466 10.7762 5.36044C10.7762 5.52623 10.6656 5.80254 10.4998 5.91307Z"/></svg>
+        </a>
+        <a class="social__link social__link--ig" href="#" aria-label="Instagram">
+          <svg viewBox="0 0 15 15" fill="currentColor" aria-hidden="true"><path d="M12.4642 0H2.06805C0.894291 0 0 0.894293 0 2.06805V12.4642C0 13.638 0.894291 14.5323 2.06805 14.5323H12.4642C13.638 14.5323 14.5323 13.638 14.5323 12.4642V2.06805C14.5323 0.894293 13.638 0 12.4642 0ZM7.26613 11.6258C9.66954 11.6258 11.6258 9.72543 11.6258 7.43381C11.6258 7.04256 11.5699 6.59541 11.4581 6.26005H12.6878V12.1847C12.6878 12.4642 12.4642 12.7437 12.1288 12.7437H2.40341C2.12395 12.7437 1.84448 12.5201 1.84448 12.1847V6.20416H3.13003C3.01824 6.59541 2.96235 6.98666 2.96235 7.37792C2.90645 9.72544 4.86272 11.6258 7.26613 11.6258ZM7.26613 9.94901C5.70112 9.94901 4.47146 8.71936 4.47146 7.21024C4.47146 5.70112 5.70112 4.47146 7.26613 4.47146C8.83114 4.47146 10.0608 5.70112 10.0608 7.21024C10.0608 8.77525 8.83114 9.94901 7.26613 9.94901ZM12.6319 3.96842C12.6319 4.30378 12.3524 4.58325 12.0171 4.58325H10.452C10.1167 4.58325 9.83722 4.30378 9.83722 3.96842V2.45931C9.83722 2.12395 10.1167 1.84448 10.452 1.84448H12.0171C12.3524 1.84448 12.6319 2.12395 12.6319 2.45931V3.96842Z"/></svg>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <nav class="mainnav" aria-label="Основная навигация">
+    <div class="container mainnav__inner">
+      <button class="burger" type="button" aria-label="Открыть меню" aria-expanded="false" aria-controls="mainnav-list">
+        <span class="burger__box" aria-hidden="true">
+          <span class="burger__bar"></span>
+          <span class="burger__bar"></span>
+          <span class="burger__bar"></span>
+        </span>
+      </button>
+
+      <div class="mainnav__list" id="mainnav-list">
+        <a class="mainnav__link" href="index.html" aria-current="page">Пластиковые карты</a>
+        <span class="mainnav__divider" aria-hidden="true"></span>
+        <a class="mainnav__link" href="rfid.html">RFID-продукция</a>
+        <span class="mainnav__divider" aria-hidden="true"></span>
+        <a class="mainnav__link" href="pos.html">POS-материалы</a>
+        <span class="mainnav__divider" aria-hidden="true"></span>
+        <a class="mainnav__link" href="contacts.html">Контакты</a>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<!-- ─────────────────────────── BREADCRUMB ─────────────────────────── -->
+<nav class="breadcrumb" aria-label="Хлебные крошки">
+  <div class="container breadcrumb__inner">
+    <a class="breadcrumb__link" href="index.html">Главная</a>
+    <span class="breadcrumb__sep" aria-hidden="true">/</span>
+    <a class="breadcrumb__link" href="index.html">Пластиковые карты</a>
+    <span class="breadcrumb__sep" aria-hidden="true">/</span>
+    <span class="breadcrumb__current" aria-current="page">Карты учащегося</span>
+  </div>
+</nav>
+
+<main>
+
+<!-- ─────────────────────────── КАРТОЧКА ТОВАРА ─────────────────────────── -->
+<section class="product">
+  <div class="container">
+    <h1 class="product__title">Карты учащегося</h1>
+
+    <div class="product__grid">
+      <div class="gallery gallery--solo">
+        <div class="gallery__main">
+          <img src="assets/card-student.webp" alt="Карты учащегося, изображение" width="500" height="400">
+        </div>
+      </div>
+
+      <div class="product__info">
+        <div class="product__desc">
+          <p>Карты учащегося предназначены для школ, колледжей, вузов, учебных центров и программ дополнительного образования. Они объединяют идентификацию, пропуск и информационный носитель в одном компактном формате.</p>
+          <p>Изготовим именные карты с фотографией, ФИО, классом или группой, номером, сроком действия, штрихкодом, QR-кодом или RFID/NFC-чипом для прохода, питания, библиотеки и учёта.</p>
+        </div>
+
+        <div class="product__buy">
+          <span class="product__price">по запросу</span>
+          <a class="btn btn--282" href="#order">Заказать карты</a>
+        </div>
+
+        <ul class="perks">
+          <li class="perk">
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 3h12l4 6-10 13L2 9z"/><path d="M11 3 8 9l4 13 4-13-3-6"/><path d="M2 9h20"/></svg>
+            <span>Цена от производителя</span>
+          </li>
+          <li class="perk">
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 18V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v11a1 1 0 0 0 1 1h2"/><path d="M15 18H9"/><path d="M19 18h2a1 1 0 0 0 1-1v-3.65a1 1 0 0 0-.22-.62l-3.48-4.35A1 1 0 0 0 17.52 8H14"/><circle cx="17" cy="18" r="2"/><circle cx="7" cy="18" r="2"/></svg>
+            <span>Экспресс-доставка</span>
+          </li>
+          <li class="perk">
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+            <span>Изготовление от 24 ч</span>
+          </li>
+        </ul>
+
+        <p class="note note--tight">Доставка по Беларуси.</p>
+
+        <div class="accordion">
+          <details class="accordion__item">
+            <summary class="accordion__title">
+              Характеристики и материалы
+              <svg class="accordion__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
+            </summary>
+            <div class="accordion__body">
+              <p class="design__text">Карты учащегося выполняются в размере 86 × 54 мм и толщине 0,76 мм. Доступна полноцветная печать с одной или двух сторон, прочный белый PVC с матовым или глянцевым покрытием.</p>
+              <p class="design__text">Карта рассчитана на ежедневное использование: её удобно носить в кошельке, бейдже или кардхолдере. На обороте можно разместить правила использования, контакты учебного заведения, штрихкод и другую полезную информацию.</p>
+            </div>
+          </details>
+
+          <details class="accordion__item">
+            <summary class="accordion__title">
+              Персонализация и технологии
+              <svg class="accordion__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
+            </summary>
+            <div class="accordion__body">
+              <p class="design__text">На карту наносятся фотография и ФИО учащегося, класс, группа, факультет, курс, номер карты, учебный год и срок действия. Для систем прохода, питания, библиотеки и учёта доступны штрихкод, QR-код, магнитная полоса или RFID/NFC-чип.</p>
+              <p class="design__text">Для массового выпуска обычно требуется Excel/CSV-таблица и папка с фотографиями в согласованном формате. Это позволяет быстро подготовить единый персонализированный тираж для всех классов, групп или факультетов.</p>
+            </div>
+          </details>
+
+          <details class="accordion__item">
+            <summary class="accordion__title">
+              Дополнительные возможности и ответы на вопросы
+              <svg class="accordion__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
+            </summary>
+            <div class="accordion__body">
+              <p class="design__text">Поможем оформить единый дизайн, проверить данные, подготовить карты по классам и группам и разложить готовый тираж для удобной выдачи.</p>
+              <p class="design__text"><strong>Можно использовать карту как пропуск?</strong> Да. Для этого подбирается совместимый с вашей системой RFID/NFC-чип или другой способ идентификации.</p>
+              <p class="design__text"><strong>Как передать данные и фотографии?</strong> Обычно предоставляется Excel/CSV-таблица и папка с фото по согласованному правилу именования файлов.</p>
+            </div>
+          </details>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─────────────────────────── ФОРМА ОБРАЗЦОВ ─────────────────────────── -->
+<section class="samples" id="order">
+  <div class="container">
+    <div class="samples__head">
+      <p class="samples__eyebrow">Закажите</p>
+      <h2 class="samples__heading">Бесплатные образцы продукции</h2>
+    </div>
+    <form class="samples__form" novalidate>
+      <input class="field__input" name="name" type="text" placeholder="Ваше имя" autocomplete="name" aria-label="Ваше имя">
+      <select class="field__input field__select" name="country" aria-label="Страна">
+        <option value="BY">BY</option>
+        <option value="RU">RU</option>
+      </select>
+      <input class="field__input" name="phone" type="tel" placeholder="Телефон" autocomplete="tel" aria-label="Телефон">
+      <button class="btn btn--215" type="submit">Отправить</button>
+      <label class="consent">
+        <input class="consent__box" type="checkbox" name="consent" required>
+        <span class="consent__text">Нажимая кнопку «Отправить», Вы подтверждаете, что согласны с Офертой и обработкой Ваших персональных данных</span>
+      </label>
+      <p class="js-form-done leadform__done" hidden>Спасибо! Мы свяжемся с вами.</p>
+    </form>
+  </div>
+</section>
+
+<!-- ─────────────────────────── РЕКОМЕНДАЦИИ ─────────────────────────── -->
+<section class="recommend">
+  <div class="container">
+    <h2 class="section-heading section-heading--brand">Рекомендации для вас</h2>
+    <ul class="cards">
+      <li class="card">
+        <div class="card__media card__media--bleed"><img src="assets/card-any-shape.webp" alt="Карты любой формы" loading="lazy"></div>
+        <h3 class="card__title">Карты любой формы</h3>
+      </li>
+      <li class="card">
+        <div class="card__media"><img src="assets/card-tag.webp" alt="Карты 1-, 2- и 3-tag" loading="lazy"></div>
+        <h3 class="card__title">Карты 1-, 2- и 3-tag</h3>
+      </li>
+      <li class="card">
+        <div class="card__media card__media--bleed"><img src="assets/card-textured.webp" alt="Фактурные карты" loading="lazy"></div>
+        <h3 class="card__title">Фактурные карты</h3>
+      </li>
+      <li class="card">
+        <div class="card__media"><img src="assets/card-magnet.webp" alt="Карты на магните" loading="lazy"></div>
+        <h3 class="card__title">Карты на магните</h3>
+      </li>
+    </ul>
+  </div>
+</section>
+
+</main>
+
+<!-- ─────────────────────────── FOOTER ─────────────────────────── -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer__content">
+      <div class="footer__col footer__col--about">
+        <div class="footer__brand">
+          <img class="footer__logo" src="assets/logo.png" alt="БелПолКард" width="34" height="43">
+          <div class="footer__ident">
+            <p class="footer__company">ООО “БелПолКард”</p>
+            <p class="footer__company">УНП 291338545</p>
+          </div>
+        </div>
+        <p class="footer__legal">Зарегистрирована в едином государственном регистре юридических лиц и предпринимателей 29.08.2014<br>Свидетельство о регистрации № 291338545.</p>
+      </div>
+
+      <div class="footer__col footer__col--links">
+        <ul class="footer__links">
+          <li><a href="index.html">Пластиковые карты</a></li>
+          <li><a href="rfid.html">Карты с RFID-чипами</a></li>
+          <li><a href="rfid.html">RFID-браслеты</a></li>
+          <li><a href="rfid.html">RFID-брелоки</a></li>
+          <li><a href="#">Рекламная продукция</a></li>
+        </ul>
+        <div class="footer__linkcol">
+          <ul class="footer__links">
+            <li><a href="delivery.html">Доставка и оплата</a></li>
+            <li><a href="contacts.html">Контакты</a></li>
+            <li><a href="privacy.html">Политика конфиденциальности</a></li>
+          </ul>
+          <div class="footer__social footer__social--start">
+            <a class="social__link social__link--ig social__link--sm" href="#" aria-label="Instagram">
+              <svg viewBox="0 0 15 15" fill="currentColor" aria-hidden="true"><path d="M12.4642 0H2.06805C0.894291 0 0 0.894293 0 2.06805V12.4642C0 13.638 0.894291 14.5323 2.06805 14.5323H12.4642C13.638 14.5323 14.5323 13.638 14.5323 12.4642V2.06805C14.5323 0.894293 13.638 0 12.4642 0ZM7.26613 11.6258C9.66954 11.6258 11.6258 9.72543 11.6258 7.43381C11.6258 7.04256 11.5699 6.59541 11.4581 6.26005H12.6878V12.1847C12.6878 12.4642 12.4642 12.7437 12.1288 12.7437H2.40341C2.12395 12.7437 1.84448 12.5201 1.84448 12.1847V6.20416H3.13003C3.01824 6.59541 2.96235 6.98666 2.96235 7.37792C2.90645 9.72544 4.86272 11.6258 7.26613 11.6258ZM7.26613 9.94901C5.70112 9.94901 4.47146 8.71936 4.47146 7.21024C4.47146 5.70112 5.70112 4.47146 7.26613 4.47146C8.83114 4.47146 10.0608 5.70112 10.0608 7.21024C10.0608 8.77525 8.83114 9.94901 7.26613 9.94901ZM12.6319 3.96842C12.6319 4.30378 12.3524 4.58325 12.0171 4.58325H10.452C10.1167 4.58325 9.83722 4.30378 9.83722 3.96842V2.45931C9.83722 2.12395 10.1167 1.84448 10.452 1.84448H12.0171C12.3524 1.84448 12.6319 2.12395 12.6319 2.45931V3.96842Z"/></svg>
+            </a>
+            <a class="social__link social__link--yt social__link--sm" href="#" aria-label="YouTube">
+              <svg viewBox="0 0 16 11" fill="currentColor" aria-hidden="true"><path d="M15.1419 4.19993C15.1419 3.86836 15.0866 3.48153 15.0866 3.03943C15.0314 2.59733 14.9761 2.15523 14.9208 1.76839C14.8103 1.32629 14.6445 0.994723 14.3129 0.718412C14.0366 0.4421 13.6498 0.276308 13.263 0.221046C11.9919 0.0552589 10.113 0 7.57094 0C5.02888 0 3.09469 0.0552589 1.87892 0.221046C1.49208 0.276308 1.10525 0.4421 0.828935 0.718412C0.552623 0.994723 0.33157 1.32629 0.221046 1.76839C0.110521 2.15523 0.0552657 2.54207 0.0552657 3.03943C3.37212e-06 3.48153 0 3.86836 0 4.19993C0 4.5315 0 4.91834 0 5.47097C0 6.02359 0 6.46569 0 6.742C0 7.07357 0.0552657 7.46041 0.0552657 7.90251C0.110528 8.34461 0.165784 8.7867 0.221046 9.17354C0.33157 9.61564 0.497361 9.94722 0.828935 10.2235C1.10525 10.4998 1.49208 10.6656 1.87892 10.7209C3.14995 10.8867 5.02888 10.9419 7.57094 10.9419C10.113 10.9419 12.0472 10.8867 13.263 10.7209C13.6498 10.6656 14.0366 10.4998 14.3129 10.2235C14.5892 9.94722 14.8103 9.61564 14.9208 9.17354C15.0313 8.7867 15.0866 8.39987 15.0866 7.90251C15.1419 7.46041 15.1419 7.07357 15.1419 6.742C15.1419 6.41043 15.1419 6.02359 15.1419 5.47097C15.1419 4.91834 15.1419 4.47624 15.1419 4.19993ZM10.4998 5.91307L6.13412 8.62092C6.07886 8.67618 5.96833 8.73145 5.85781 8.73145C5.74728 8.73145 5.69202 8.73144 5.5815 8.67618C5.41571 8.56566 5.30518 8.39987 5.30518 8.17882V2.70785C5.30518 2.4868 5.41571 2.32102 5.5815 2.21049C5.74728 2.09997 5.96833 2.09997 6.13412 2.21049L10.4998 4.91834C10.6656 5.02887 10.7762 5.19466 10.7762 5.36044C10.7762 5.52623 10.6656 5.80254 10.4998 5.91307Z"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer__col footer__col--contact">
+        <a class="btn btn--215" href="tel:+375336025004">Заказать звонок</a>
+
+        <div class="footer__contacts">
+          <div class="footer__contact">
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M14.05 2a9 9 0 0 1 8 7.94"/><path d="M14.05 6A5 5 0 0 1 18 10"/>
+              <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+            </svg>
+            <a class="footer__phone" href="tel:+375336025004">+375 (33) 602-50-04</a>
+          </div>
+          <div class="footer__contact">
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M21 7.5V6a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h3.5"/>
+              <path d="M16 2v4"/><path d="M8 2v4"/><path d="M3 10h5"/>
+              <path d="M17.5 17.5 16 16.3V14"/><circle cx="16" cy="16" r="6"/>
+            </svg>
+            <span class="footer__meta">09:00 - 17:00 в будни</span>
+          </div>
+          <div class="footer__contact">
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <rect width="20" height="16" x="2" y="4" rx="2"/>
+              <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
+            </svg>
+            <a class="footer__meta" href="mailto:info@bcard.by">info@bcard.by</a>
+          </div>
+        </div>
+
+        <div class="footer__social footer__social--contact">
+          <a class="social__link social__link--ig social__link--sm" href="#" aria-label="Instagram">
+            <svg viewBox="0 0 15 15" fill="currentColor" aria-hidden="true"><path d="M12.4642 0H2.06805C0.894291 0 0 0.894293 0 2.06805V12.4642C0 13.638 0.894291 14.5323 2.06805 14.5323H12.4642C13.638 14.5323 14.5323 13.638 14.5323 12.4642V2.06805C14.5323 0.894293 13.638 0 12.4642 0ZM7.26613 11.6258C9.66954 11.6258 11.6258 9.72543 11.6258 7.43381C11.6258 7.04256 11.5699 6.59541 11.4581 6.26005H12.6878V12.1847C12.6878 12.4642 12.4642 12.7437 12.1288 12.7437H2.40341C2.12395 12.7437 1.84448 12.5201 1.84448 12.1847V6.20416H3.13003C3.01824 6.59541 2.96235 6.98666 2.96235 7.37792C2.90645 9.72544 4.86272 11.6258 7.26613 11.6258ZM7.26613 9.94901C5.70112 9.94901 4.47146 8.71936 4.47146 7.21024C4.47146 5.70112 5.70112 4.47146 7.26613 4.47146C8.83114 4.47146 10.0608 5.70112 10.0608 7.21024C10.0608 8.77525 8.83114 9.94901 7.26613 9.94901ZM12.6319 3.96842C12.6319 4.30378 12.3524 4.58325 12.0171 4.58325H10.452C10.1167 4.58325 9.83722 4.30378 9.83722 3.96842V2.45931C9.83722 2.12395 10.1167 1.84448 10.452 1.84448H12.0171C12.3524 1.84448 12.6319 2.12395 12.6319 2.45931V3.96842Z"/></svg>
+          </a>
+          <a class="social__link social__link--yt social__link--sm" href="#" aria-label="YouTube">
+            <svg viewBox="0 0 16 11" fill="currentColor" aria-hidden="true"><path d="M15.1419 4.19993C15.1419 3.86836 15.0866 3.48153 15.0866 3.03943C15.0314 2.59733 14.9761 2.15523 14.9208 1.76839C14.8103 1.32629 14.6445 0.994723 14.3129 0.718412C14.0366 0.4421 13.6498 0.276308 13.263 0.221046C11.9919 0.0552589 10.113 0 7.57094 0C5.02888 0 3.09469 0.0552589 1.87892 0.221046C1.49208 0.276308 1.10525 0.4421 0.828935 0.718412C0.552623 0.994723 0.33157 1.32629 0.221046 1.76839C0.110521 2.15523 0.0552657 2.54207 0.0552657 3.03943C3.37212e-06 3.48153 0 3.86836 0 4.19993C0 4.5315 0 4.91834 0 5.47097C0 6.02359 0 6.46569 0 6.742C0 7.07357 0.0552657 7.46041 0.0552657 7.90251C0.110528 8.34461 0.165784 8.7867 0.221046 9.17354C0.33157 9.61564 0.497361 9.94722 0.828935 10.2235C1.10525 10.4998 1.49208 10.6656 1.87892 10.7209C3.14995 10.8867 5.02888 10.9419 7.57094 10.9419C10.113 10.9419 12.0472 10.8867 13.263 10.7209C13.6498 10.6656 14.0366 10.4998 14.3129 10.2235C14.5892 9.94722 14.8103 9.61564 14.9208 9.17354C15.0313 8.7867 15.0866 8.39987 15.0866 7.90251C15.1419 7.46041 15.1419 7.07357 15.1419 6.742C15.1419 6.41043 15.1419 6.02359 15.1419 5.47097C15.1419 4.91834 15.1419 4.47624 15.1419 4.19993ZM10.4998 5.91307L6.13412 8.62092C6.07886 8.67618 5.96833 8.73145 5.85781 8.73145C5.74728 8.73145 5.69202 8.73144 5.5815 8.67618C5.41571 8.56566 5.30518 8.39987 5.30518 8.17882V2.70785C5.30518 2.4868 5.41571 2.32102 5.5815 2.21049C5.74728 2.09997 5.96833 2.09997 6.13412 2.21049L10.4998 4.91834C10.6656 5.02887 10.7762 5.19466 10.7762 5.36044C10.7762 5.52623 10.6656 5.80254 10.4998 5.91307Z"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer__credits">
+      <div class="footer__divider" role="presentation"></div>
+      <div class="footer__row">
+        <p class="footer__copy">© 2014-2026 БелПолКард. Все права зарезервированы</p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>
