@@ -1426,7 +1426,7 @@ a.cinfo__text:hover { color: var(--brand); }
 .product { padding: 24px 0 60px; }
 
 .product__title {
-  margin-bottom: 40px;
+  margin-bottom: 24px;
   font-weight: 900;
   font-size: var(--fs-h1);
   line-height: 1.2;
@@ -1804,7 +1804,7 @@ a.cinfo__text:hover { color: var(--brand); }
 
 @media (max-width: 760px) {
   .product { padding: 48px 0; }
-  .product__title { margin-bottom: 32px; }
+  .product__title { margin-bottom: 24px; }
   .samples { padding: 48px 0; }
   .recommend { padding: 48px 0; }
   .recommend .section-heading { margin-bottom: 32px; }
