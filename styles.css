@@ -835,7 +835,14 @@ a.contact__value:hover { color: var(--brand-hover); }
 
 .accordion__title::-webkit-details-marker { display: none; }
 
-.accordion__body { padding-bottom: 16px; }
+.accordion__body {
+  padding-bottom: 16px;
+  font-family: var(--font-display);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.6;
+  color: var(--ink);
+}
 .accordion__body p + p { margin-top: 12px; }
 
 .accordion__icon {
